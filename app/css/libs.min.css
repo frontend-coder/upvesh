@@ -886,8 +886,8 @@ img.mfp-img
 @font-face
 {
   font-family: 'FontAwesome';
-  src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
-  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+  src: url("../fonts/font-awesome/fontawesome-webfont.eot?v=4.7.0");
+  src: url("../fonts/font-awesome/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/font-awesome/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/font-awesome/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../fonts/font-awesome/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../fonts/font-awesome/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -5265,7 +5265,7 @@ a.cv_btn:hover
   padding: 100px 0;
 }
 
-.about_me h2
+.block h2
 {
   display: inline-block;
   font-size: 35px;
@@ -5276,7 +5276,7 @@ a.cv_btn:hover
   position: relative;
 }
 
-.about_me h2:before
+.block h2:before
 {
   content: '';
   position: absolute;
@@ -5285,6 +5285,16 @@ a.cv_btn:hover
   height: 2px;
   bottom: 0;
   background-color: #febd01;
+}
+
+.our_service_title
+{
+  text-align: center;
+}
+
+.our_service_title h2:before
+{
+  left: 30%;
 }
 
 .about_me p.small
@@ -5389,6 +5399,90 @@ a.cv_btn:hover
   width: calc(50% - 15px);
   margin-bottom: 10px;
   list-style-type: none;
+}
+
+.our_service
+{
+  background-color: #f5f8fd;
+}
+
+.our_service_wrap
+{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.our_service_item
+{
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 calc(33.33% - 20px);
+  flex: 0 0 calc(33.33% - 20px);
+  max-width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  border-left: 1px solid #eeeeee;
+  background-color: #fff;
+  padding: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.our_service_item:before
+{
+  content: '';
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  right: 30%;
+  background-color: #febd01;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.our_service_item:hover:before
+{
+  left: 0;
+  right: 0;
+}
+
+.our_service_item h5
+{
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  margin: 0;
+}
+
+.our_service_item .our_service_icon
+{
+  height: 60px;
+  width: 60px;
+  color: #fff;
+  background-color: #febd01;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+}
+
+.our_service_item .our_service_icon .fa
+{
+  font-size: 25px;
+  line-height: 60px;
+}
+
+.our_service_item p
+{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #838383;
+  margin: 10px 0 0;
 }
 
 footer
