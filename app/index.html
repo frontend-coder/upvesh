@@ -258,6 +258,140 @@
 
 
 
+		<section class="block portfolio">
+			<div class="container">
+				<div class="our_service_title">
+					<h2> Мои работы </h2>
+				</div>
+				<div class="row">
+					<div class="filter_buttons">
+						<ul id="filter-btns">
+							<li class="active" data-target="all">Все</li>
+							<li data-target="landingpages">Landing Pages</li>
+							<li data-target="blogs">Блоги</li>
+							<li data-target="sitesvisits">Сайты-визитки</li>
+
+						</ul>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="portfolio_gallery">
+
+						<div class="item" data-id="landingpages">
+							<div class="inner">
+							<img src="img/portfolio/1.jpg" alt="Эта работа в портфолио">
+							<div class="overlay">
+								<span class="fa fa-plus"></span>
+								<h4>Название работы</h4>
+							</div>
+						</div>
+						</div>
+
+
+						<div class="item" data-id="blogs">
+							<div class="inner">
+							<img src="img/portfolio/2.jpg" alt="Эта работа в портфолио">
+							<div class="overlay">
+								<span class="fa fa-plus"></span>
+								<h4>Название работы</h4>
+							</div>
+						</div>
+					</div>
+
+						<div class="item" data-id="sitesvisits">
+							<div class="inner">
+							<img src="img/portfolio/3.jpg" alt="Эта работа в портфолио">
+							<div class="overlay">
+								<span class="fa fa-plus"></span>
+								<h4>Название работы</h4>
+							</div>
+						</div>
+					</div>
+
+						<div class="item" data-id="landingpages">
+							<div class="inner">
+							<img src="img/portfolio/4.jpg" alt="Эта работа в портфолио">
+							<div class="overlay">
+								<span class="fa fa-plus"></span>
+								<h4>Название работы</h4>
+							</div>
+						</div>
+					</div>
+
+						<div class="item" data-id="blogs">
+							<div class="inner">
+							<img src="img/portfolio/5.jpg" alt="Эта работа в портфолио">
+							<div class="overlay">
+								<span class="fa fa-plus"></span>
+								<h4>Название работы</h4>
+							</div>
+						</div>
+					</div>
+
+						<div class="item" data-id="sitesvisits">
+							<div class="inner">
+							<img src="img/portfolio/6.jpg" alt="Эта работа в портфолио">
+							<div class="overlay">
+								<span class="fa fa-plus"></span>
+								<h4>Название работы</h4>
+							</div>
+						</div>
+					</div>
+
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+<div class="lightbox">
+	<span class="close-lightbox fa fa-close"> </span>
+	<img src="img/portfolio/6.jpg" alt="Эта работа в портфолио">
+</div>
+
+
+
+
+
+
+		<section class="block">
+			<div class="container">
+				<div class="row">
+					<div class="skills_wrap">
+
+						<div class="skills_wrap_items">
+							<div class="skills_wrap_content">
+								<h2> Калькулятор услуг</h2>
+								<p class="small ttu"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, officia? </p>
+							</div>
+						</div>
+
+						<div class="skills_wrap_items">l;lkkjj h л ллдл
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -304,6 +438,60 @@
 	</footer><!-- /footer -->
 
 	<script src="js/scripts.min.js"></script>
+<script>
+const filterBtns = document.querySelector("#filter-btns").children;
+const items = document.querySelector(".portfolio_gallery").children;
+
+
+for( let i = 0; i < filterBtns.length; i++  ) {
+filterBtns[i].addEventListener("click", function() {
+for(let j=0; j<filterBtns.length; j++) {
+filterBtns[j].classList.remove("active");
+}
+this.classList.add("active");
+const target = this.getAttribute("data-target");
+for(let k=0; k<items.length; k++) {
+items[k].style.display="none";
+ if(target == items[k].getAttribute("data-id")) {
+		items[k].style.display="block";
+}
+if( target == "all") {
+		items[k].style.display="block";
+}
+}
+});
+}
+
+const closeLightBox = document.querySelector(".close-lightbox");
+const lightbox = document.querySelector(".lightbox");
+const lightBoxImages = lightbox.querySelector("img");
+
+lightbox.addEventListener("click", function(e){
+if(e.target!=lightBoxImages) {
+lightbox.classList.add("hide");
+lightbox.classList.remove("show");
+}
+});
+
+closeLightBox.addEventListener("click", function() {
+lightbox.classList.add("hide");
+lightbox.classList.remove("show");
+});
+
+const gallery = document.querySelector(".portfolio_gallery");
+const galleryItem = document.querySelectorAll(".item");
+
+galleryItem.forEach(function(e) {
+e.querySelector(".fa-plus").addEventListener("click", function(){
+lightbox.classList.remove("hide");
+lightbox.classList.add("show");
+lightBoxImages.src = e.querySelector("img").getAttribute("src");
+})
+})
+
+
+</script>
+
 </body>
 
 </html>
