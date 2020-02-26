@@ -179,6 +179,73 @@
 }
 
 
+.skills_wrap {
+	display: flex;
+	justify-content: space-between;
+}
+.skills_wrap_items {
+	width:50%;
+	display: flex;
+align-items: center;
+}
+
+.skills_wrap_items .pic img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+
+
+
+.skills_content {
+	margin-top: 30px;
+	margin-right: 20px;
+}
+
+.skill_box {
+	max-width:100%;
+	margin-bottom: 25px;
+}
+
+.skill_box h6 {
+	font-size: 16px;
+	font-weight: 500;
+	color:#000;
+	margin:0;
+}
+
+.skill_bar {
+	height:8px;
+	background-color: #eee;
+	position: relative;
+}
+
+.skill_bar_in {
+	background-color: #febd01;
+	position: absolute;
+	left:0;
+	top:0;
+	height:8px;
+}
+
+.skill_bar_in span {
+	right:0;
+	top:-22px;
+	color:#838383;
+	font-size: 16px;
+	font-weight: 400;
+	position: absolute;
+}
+
+
+
+
+
+
+
 // https://www.youtube.com/watch?v=BrYWNlEZtDY&t=64s
 
 
