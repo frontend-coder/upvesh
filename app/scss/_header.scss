@@ -1,168 +1,150 @@
 .header_fon {
-	background: url(../img/hero/1.jpg) center center no-repeat;
-	background-size: cover;
-	min-height: 100vh;
+  background: url(../img/hero/1.jpg) center center no-repeat;
+  background-size: cover;
+  min-height: 100vh;
 }
 .topline {
-	position: fixed;
-	width:100%;
-	top:0;
-	left:0;
-	border-bottom: 1px solid #423940;
-	z-index: 1;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid #423940;
+  z-index: 1;
 }
 .topline_wrap {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.brand-name {
 
-}
 a.logo {
-	display: inline-block;
-	text-decoration: none;
-	font-size: 22px;
-	color:#fff;
-	font-family: "Poppins-Bold", sans-serif;
-	text-decoration: none;
-	position: relative;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 22px;
+  color: #fff;
+  font-family: 'Poppins-Bold', sans-serif;
+  text-decoration: none;
+  position: relative;
 }
 a.logo:before {
-	content:'';
-	height:3px;
-	background-color: #fff;
-	width:100%;
-	position: absolute;
-	left:0;
-	bottom:0;
+  content: '';
+  height: 3px;
+  background-color: #fff;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.pic {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .navbar {
-	padding: 0;
-	margin: 0;
+  padding: 0;
+  margin: 0;
 }
 .navbar ul {
-	padding: 0;
-	margin: 0;
-	font-size:0px;
-
+  padding: 0;
+  margin: 0;
+  font-size: 0px;
 }
-.navbar ul li{
-	display: inline-block;
-
+.navbar ul li {
+  display: inline-block;
 }
-.navbar ul li a{
-	display: inline-block;
-	font-size: 15px;
-	color:#fff;
-	padding:15px;
-	text-decoration: none;
-	position: relative;
-	@include transition(all, 0.2s, ease);
+.navbar ul li a {
+  display: inline-block;
+  font-size: 15px;
+  color: #fff;
+  padding: 15px;
+  text-decoration: none;
+  position: relative;
+  @include transition(all, 0.2s, ease);
 }
 
 .navbar ul li a:before {
-	content:'';
-	height:3px;
-	background-color: #fff;
-	width:0;
-	position: absolute;
-	left:0;
-	bottom:0;
-	@include transition(all, 0.2s, ease);
+  content: '';
+  height: 3px;
+  background-color: #fff;
+  width: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  @include transition(all, 0.2s, ease);
 }
 
-.navbar ul li a:hover:before{
-	width:100%;
+.navbar ul li a:hover:before {
+  width: 100%;
 }
-
-
-
-
 
 .navbar ul li.active a:before {
-	content:'';
-	height:3px;
-	background-color: #6b0b16;
-	width:100%;
-	position: absolute;
-	left:0;
-	bottom:0;
+  content: '';
+  height: 3px;
+  background-color: #6b0b16;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .home-content {
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	flex-direction: column;
-	min-height:100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .header_content {
-	align-items: center;
+  align-items: center;
 
-	border-left: 5px solid #fff;
-	padding-left: 35px;
-
-
+  border-left: 5px solid #fff;
+  padding-left: 35px;
 }
 .header_content h6 {
-	color:#fff;
-	font-size: 18px;
-	font-weight: 500;
-	padding: 0;
-	margin: 0 0 20px 0;
-	line-height: 1.2;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0;
+  margin: 0 0 20px 0;
+  line-height: 1.2;
 }
 
 .header_content h1 {
-	color:#fff;
-	font-size: 70px;
-	font-weight: 600;
-	padding: 0;
-	margin:0 0 25px 0;
-	line-height: 1.2;
+  color: #fff;
+  font-size: 70px;
+  font-weight: 600;
+  padding: 0;
+  margin: 0 0 25px 0;
+  line-height: 1.2;
 }
 
 .header_content h3 {
-	color:#fff;
-	font-size: 25px;
-	font-weight: 500;
-	padding: 0;
-	margin:0;
-	line-height: 1.2;
-	margin-bottom: 15px;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+  line-height: 1.2;
+  margin-bottom: 15px;
 }
 
 a.cv_btn {
-	margin-top: 20px;
-	display: inline-block;
-	color:#fff;
-	border:1px solid #fff;
-	border-radius: 4px;
-	padding:12px 25px;
-	text-decoration: none;
-	font-size: 14px;
-	text-transform: uppercase;
-	font-weight: 600;
-	@include transition(all, 0.35s, ease);
+  margin-top: 20px;
+  display: inline-block;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  @include transition(all, 0.35s, ease);
 }
 
 a.cv_btn:hover {
-	color:#000;
-	background-color: #fff;
+  color: #000;
+  background-color: #fff;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
