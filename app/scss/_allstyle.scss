@@ -563,10 +563,70 @@
   color: #000;
   border-bottom: 1px solid #000;
 }
-// https://www.youtube.com/watch?v=o7NpmIo9RhM&t=17s
 
-// https://www.youtube.com/watch?v=epocwZqtWF8&t=62s
+.contact_fon {
+  background-color: #f5f8fd;
+}
+.site_form {
+  padding: 20px 30px;
+  background-color: #fff;
+}
+.site_form_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.siteform_item {
+  flex: 0 0 48%;
+  max-width: 48%;
+  height: 45px;
+  line-height: 45px;
+  text-indent: 14px;
+  border: 1px solid #ced4da;
+  color: #838383;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.siteform_area {
+  margin-top: 30px;
+  padding-top: 20px;
+  flex: 0 0 100%;
+  max-width: 100%;
+  min-height: 150px;
+  text-indent: 14px;
+  border: 1px solid #ced4da;
+  color: #838383;
+  font-size: 14px;
+  font-weight: 400;
+  resize: vertical;
+}
+.font_btn {
+  margin-top: 30px;
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.font_btn {
+  border-radius: 4px;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 25px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  @include transition(all, 0.25s, ease);
+  background: #febd01;
+}
+.font_btn:hover {
+  color: #fff;
+  background-color: #000000;
+}
 
 footer {
-  height: 800px;
+  background-color: red;
+  height: 8100px;
+  color: darken(#818592, 10%);
 }
