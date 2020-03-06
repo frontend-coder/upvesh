@@ -42,14 +42,17 @@
           <div class="brand-name">
             <a href="#" class="logo">Upvesh</a>
           </div>
+          <div class="ham-burger">
+            <i class="fa fa-bars"></i>
+          </div>
           <div class="navbar">
             <ul>
-              <li class="active"><a href="#">Главная</a></li>
-              <li><a href="#">О нас</a></li>
-              <li><a href="#">Услуги</a></li>
-              <li><a href="#">Портфолио</a></li>
-              <li><a href="#">Блог</a></li>
-              <li><a href="#">Контакты</a></li>
+              <li class="active"><a href="#header">Главная</a></li>
+              <li><a href="#about">О нас</a></li>
+              <li><a href="#service">Услуги</a></li>
+              <li><a href="#portfolio">Портфолио</a></li>
+              <li><a href="#blog">Блог</a></li>
+              <li><a href="#contacts">Контакты</a></li>
             </ul>
           </div>
         </div>
@@ -71,7 +74,7 @@
   <!-- /header -->
 
   <main>
-    <section class="block about_me">
+    <section class="block about_me" id="about">
       <div class="container">
         <h2>Обо мне</h2>
         <p class="small ttu">
@@ -121,7 +124,7 @@
     </section>
     <!-- /section block -->
 
-    <section class="block our_service ">
+    <section class="block our_service" id="service">
       <div class="container">
         <div class="our_service_title">
           <h2>Наши услуги</h2>
@@ -300,7 +303,7 @@
       </div>
     </section>
 
-    <section class="block portfolio">
+    <section id="portfolio" class="block portfolio">
       <div class="container">
         <div class="our_service_title">
           <h2>Мои работы</h2>
@@ -608,7 +611,7 @@
     </section>
     <!-- /section block -->
 
-    <section class="block blogs">
+    <section id="blog" class="block blogs">
       <div class="container">
         <div class="our_service_title">
           <h2>Новые записи</h2>
@@ -669,7 +672,7 @@
   </main>
   <!-- /main -->
 
-  <section class="block contact_fon">
+  <section id="contacts" class="block contact_fon">
     <div class="container">
       <div class="our_service_title">
         <h2>Контакты</h2>
@@ -690,20 +693,73 @@
       </div>
     </div>
   </section>
-  <footer>
-    <div class="conteiner">
+  <footer class="footer_box">
+    <div class="container">
       <div class="row">
-        Далеко-далеко за словесными горами в стране гласных и согласных живут
-        рыбные тексты. Заманивший языкового единственное образ строчка текст
-        вершину жизни безорфографичный журчит. Там свой одна, вопроса назад
-        коварных ведущими всемогущая гор безопасную великий большой. Наш,
-        напоивший?
+        <div class="footer_logo">upvesh</div>
+        <div class="footer_social">
+          <ul>
+            <li> <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li> <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li> <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+
       </div>
     </div>
+    <div class="container">
+      <div class="row">
+        <div class="copyright">
+          <p>&copy; 2020 Все права защищены</p>
+        </div>
+      </div>
+    </div>
+
+
+
   </footer>
   <!-- /footer -->
 
   <script src="js/scripts.min.js"></script>
+
+
+  <script>
+
+    const hamBurger = document.querySelector(".ham-burger");
+    hamBurger.addEventListener("click", function () {
+      document.querySelector(".navbar").classList.toggle("show");
+    });
+
+    const navbar = document.querySelector(".navbar");
+    a = navbar.querySelectorAll("a");
+    a.forEach(function (element) {
+      element.addEventListener("click", function () {
+        for (let i = 0; i < a.length; i++) {
+          a[i].classList.remove('active');
+        }
+        this.classList.add('active');
+        document.querySelector(".navbar").classList.toggle("show");
+      });
+    });
+  </script>
+
+  <script>
+    window.onscroll = function () {
+      const docScrollTop = document.documentElement.scrollTop;
+      if (window.innerWidth > 991) {
+        if (docScrollTop > 100) {
+          document.querySelector(".topline").classList.add("fixed");
+        } else {
+          document.querySelector(".topline").classList.remove("fixed");
+        }
+      }
+    }
+  </script>
+
 
   <script>
     const filterBtns = document.querySelector('#filter-btns').children;

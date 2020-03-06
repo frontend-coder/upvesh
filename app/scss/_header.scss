@@ -3,13 +3,65 @@
   background-size: cover;
   min-height: 100vh;
 }
+
 .topline {
   position: fixed;
+  position: absolute;
   width: 100%;
   top: 0;
   left: 0;
   border-bottom: 1px solid #423940;
   z-index: 1;
+  @include transition(all, 0.55s, ease);
+  border-bottom: 1px solid #eee0;
+}
+.topline.fixed {
+  position: fixed;
+  background-color: #fff;
+  animation: fixHeader 1s ease;
+}
+@keyframes fixHeader {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.ham-burger .fa {
+  font-size: 20px;
+  color: #000;
+  background-color: #fff;
+  display: inline-block;
+  height: 27px;
+  width: 30px;
+  line-height: 27px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 3px;
+  display: none;
+}
+
+.topline.fixed a.logo {
+  color: #000;
+}
+.topline.fixed a.logo:before {
+  background-color: #000;
+}
+
+.topline.fixed .navbar ul li a {
+  color: #000;
+}
+
+.topline.fixed .navbar ul li a:before {
+  background-color: #febd01;
+}
+.topline.fixed .navbar ul li.active a:before {
+  content: '';
+  height: 3px;
+  background-color: #6b0b16;
 }
 .topline_wrap {
   display: flex;
