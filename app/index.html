@@ -390,7 +390,12 @@
       <img src="img/portfolio/6.jpg" alt="Эта работа в портфолио" />
     </div>
 
-    <section class="block">
+
+
+    <!-- https://www.youtube.com/watch?v=PAnNzLuPsMI&list=PLPwump5i-br0cg-KPIQrBV8OC_paAMA31&index=8&t=6776s\
+48.00 -->
+
+    <section class="block calculator_box">
       <div class="container">
         <div class="row">
           <div class="skills_wrap">
@@ -403,11 +408,258 @@
                 </p>
               </div>
             </div>
+          </div>
+        </div>
 
-            <div class="skills_wrap_items">l;lkkjj h л ллдл</div>
+        <div class="row">
+          <div class="calculate__contents">
+            <form class="price-form" id="price-form">
+
+              <div class="price-form_item">
+
+                <h5 class="title_calcul">Что верстаем</h5>
+
+                <div id="kind-site" class="radio-group">
+                  <div class="radio">
+                    <input id="radio-1" name="dosite" value="sitevisitka" type="radio" checked>
+                    <label for="radio-1" class="radio-label">Сайт-визитка</label>
+                  </div>
+
+                  <div class="radio">
+                    <input id="radio-2" name="dosite" value="blog" type="radio">
+                    <label for="radio-2" class="radio-label">Блоги</label>
+                  </div>
+
+                  <div class="radio">
+                    <input id="radio-3" name="dosite" value="landing" type="radio">
+                    <label for="radio-3" class="radio-label">Лендинги</label>
+                  </div>
+
+                  <div class="radio">
+                    <input id="radio-31" name="dosite" value="landingplusblog" type="radio">
+                    <label for="radio-31" class="radio-label">Лендинги + Блог</label>
+                  </div>
+                </div>
+                <h5 class="title_calcul">Количество страниц</h5>
+
+
+                <div class="col_page_wrap" data-name="site">
+                  <div class="col_page_item">
+                    <input min="0" type="number" class="input_short" placeholder="0" name="pages-unique">
+                  </div>
+                  <div class="col_page_item">
+                    <h5 class="title_minicalcul">Количество уникальных страниц</h5>
+                  </div>
+                </div>
+
+                <div class="col_page_wrap" data-name="site">
+                  <div class="col_page_item">
+                    <input min="0" type="number" class="input_short" placeholder="0" name="pages-general">
+                  </div>
+                  <div class="col_page_item">
+                    <h5 class="title_minicalcul">Количество типовых страниц</h5>
+                  </div>
+                </div>
+
+                <div class="col_page_wrap" data-name="blog">
+                  <div class="col_page_item">
+                    <input min="0" type="number" class="input_short" placeholder="0" name="pages-unique-blog">
+                  </div>
+                  <div class="col_page_item">
+                    <h5 class="title_minicalcul">Количество уникальных страниц</h5>
+                  </div>
+                </div>
+
+                <div class="col_page_wrap" data-name="blog">
+                  <div class="col_page_item">
+                    <input min="0" type="number" class="input_short" placeholder="0" name="pages-general-blog">
+                  </div>
+                  <div class="col_page_item">
+                    <h5 class="title_minicalcul">Количество типовых страниц</h5>
+                  </div>
+                </div>
+
+
+
+
+
+                <div class="col_page_wrap" data-name="landingplusblog">
+                  <div class="col_page_item">
+                    <input min="0" type="number" class="input_short" placeholder="0" name="lpb-section">
+                  </div>
+                  <div class="col_page_item">
+                    <h5 class="title_minicalcul">Количество типовых секций</h5>
+                  </div>
+                </div>
+
+
+                <div class="col_page_wrap" data-name="landingplusblog">
+                  <div class="col_page_item">
+                    <input min="0" type="number" class="input_short" placeholder="0" name="lpb-unique">
+                  </div>
+                  <div class="col_page_item">
+                    <h5 class="title_minicalcul">Количество уникальных страниц</h5>
+                  </div>
+                </div>
+
+                <div class="col_page_wrap" data-name="landingplusblog">
+                  <div class="col_page_item">
+                    <input min="0" type="number" class="input_short" placeholder="0" name="lpb-general">
+                  </div>
+                  <div class="col_page_item">
+                    <h5 class="title_minicalcul">Количество типовых страниц</h5>
+                  </div>
+                </div>
+
+
+
+
+                <div class="col_page_wrap" data-name="landing">
+                  <div class="col_page_item">
+                    <input min="0" type="number" class="input_short" placeholder="0" name="pages-section">
+                  </div>
+                  <div class="col_page_item">
+                    <h5 class="title_minicalcul">Количество типовых секций</h5>
+                  </div>
+                </div>
+
+              </div>
+
+
+
+
+              <div class="price-form_item">
+                <div class="mobile_sec mobile_ad">
+
+                  <input id="mobile_adapt" type="checkbox" class="checkbox" name="mobile" checked>
+                  <label for="mobile_adapt" class="radio-label">Мобильная адаптивность:</label>
+                </div>
+                <div id="mobile-points" class="radio-group">
+                  <input class="hidden" id="radio-14" name="mobilepoint" value="0" type="radio">
+                  <div class="radio" data-name="mobile">
+                    <input id="radio-4" name="mobilepoint" value="5" type="radio" checked>
+                    <label for="radio-4" class="radio-label">пять точек излома</label>
+                  </div>
+
+                  <div class="radio" data-name="mobile">
+                    <input id="radio-5" name="mobilepoint" value="7" type="radio">
+                    <label for="radio-5" class="radio-label">семь точек излома</label>
+                  </div>
+
+                  <div class="radio" data-name="mobile">
+                    <input id="radio-6" name="mobilepoint" value="9" type="radio">
+                    <label for="radio-6" class="radio-label">девять точек излома</label>
+                  </div>
+                  <div class="radio" data-name="mobile">
+                    <input id="radio-7" name="mobilepoint" value="10" type="radio">
+                    <label for="radio-7" class="radio-label">инд. количество точек излома</label>
+                  </div>
+                </div>
+
+                <h5 class="title_calcul">Дополнительный фуцнкционал</h5>
+
+
+
+                <div class="col_page_wrap">
+                  <div class="col_page_item">
+                    <input min="0" type="number" class="input_short" placeholder="0" value="0" name="carousel">
+                  </div>
+                  <div class="col_page_item">
+                    <h5 class="title_minicalcul">Карусель c контентом</h5>
+                  </div>
+                </div>
+
+
+                <div class="col_page_wrap">
+                  <div class="col_page_item">
+                    <input min="0" type="number" class="input_short" placeholder="0" value="0" name="modals">
+                  </div>
+                  <div class="col_page_item">
+                    <h5 class="title_minicalcul">Всплывающая форма обратной связи</h5>
+                  </div>
+                </div>
+
+
+                <div class="col_page_wrap">
+                  <div class="col_page_item">
+                    <input min="0" type="number" class="input_short" placeholder="0" value="0" name="calculate">
+                  </div>
+                  <div class="col_page_item">
+                    <h5 class="title_minicalcul">Калькулятор услуг</h5>
+                  </div>
+                </div>
+
+                <div class="col_page_wrap">
+                  <div class="col_page_item">
+                    <input min="0" type="number" class="input_short" placeholder="0" value="0" name="block-portfolio">
+                  </div>
+
+                  <div class="col_page_item">
+                    <h5 class="title_minicalcul">Портфолио с всплывающим окном</h5>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="price-form_item">
+                <h5 class="title_calcul">Дополнительно</h5>
+                <div class="dop_option">
+                  <div class="mobile_sec ">
+                    <input id="pixelperfect" type="checkbox" class="checkbox" name="PixelPerfect">
+                    <label for="pixelperfect" class="radio-label">PixelPerfect</label>
+                  </div>
+                  <div class="mobile_sec">
+                    <input id="retinaready" type="checkbox" class="checkbox" name="RetinaReady">
+                    <label for="retinaready" class="radio-label">Retina Ready</label>
+                  </div>
+                  <div class="mobile_sec">
+                    <input id="googlepagespeed" type="checkbox" class="checkbox" name="GooglePageSpeed">
+                    <label for="googlepagespeed" class="radio-label">Google Page Speed</label>
+                  </div>
+
+                  <div class="mobile_sec">
+                    <input id="speedwork" type="checkbox" class="checkbox" name="SpeedWork">
+                    <label for="speedwork" class="radio-label">Срочная работа</label>
+                  </div>
+                  <h5 class="title_calcul">Посадка верстки</h5>
+
+
+                  <div id="posadka" class="radio-group">
+                    <div class="radio">
+                      <input id="radio-8" name="cms" value="onlylayout" type="radio" checked>
+                      <label for="radio-8" class="radio-label">без посадки</label>
+                    </div>
+                    <div class="radio">
+                      <input id="radio-9" name="cms" value="WordPress" type="radio">
+                      <label for="radio-9" class="radio-label">WordPress</label>
+                    </div>
+
+                    <div class="radio">
+                      <input id="radio-10" name="cms" value="October" type="radio" disabled>
+                      <label for="radio-10" class="radio-label">October</label>
+                    </div>
+                  </div>
+
+                  <h5 class="title_calcul final_cost">Финальная стоимость проекта</h5>
+                  <div id="cost_final"> <span>0</span> рублей</div>
+                </div>
+                <button class="button_calc">Отправить</button>
+
+              </div>
+
+
+
+
+
+
+
+
+            </form>
           </div>
         </div>
       </div>
+
     </section>
 
     <section class="block testimonials">
@@ -496,7 +748,7 @@
           <div class="acc_wrap">
             <div class="acc_wrap-item">
               <div class="accordion">
-                <div class="accordion-item">
+                <div class="accordion-item active">
                   <div class="item-header">
                     <h1 class="title">Дизайн</h1>
                     <div class="icon">+</div>
