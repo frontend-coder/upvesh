@@ -1,5 +1,7 @@
-.block {
+.block,
+.single-block {
   padding: 100px 0;
+  background-color: #fff;
 }
 
 .block h2 {
@@ -47,6 +49,13 @@
 .about_me_wrap .pic {
   flex: 0 0 33.33%;
   max-width: 33.33%;
+  min-height: 450px;
+  background-image: url(../img/about_me.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  //  background-size: 50% 40%;
+  background-position: 20% 0;
+  transform: rotateY(180deg);
 }
 .about_me_wrap .about_content {
   flex: 0 0 66.67%;
@@ -525,7 +534,7 @@
 .blok_post .picture img {
   max-width: 100%;
   height: auto;
-  display: inline-block;
+  display: block;
   transition: all 0.5s ease;
 }
 .blok_post .picture {
@@ -625,10 +634,17 @@
   color: #fff;
   background-color: #000000;
 }
-
+.main_content {
+  position: relative;
+  z-index: 1;
+}
 .footer_box {
   background-color: #0c0c17;
   padding: 80px 0 15px;
+  position: sticky;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
 }
 
 .footer_box .footer_logo {
@@ -696,7 +712,12 @@
 .title_minicalcul {
   font-size: 15px;
   font-weight: 500;
+}
+.price_minicalcul {
+  font-size: 12px;
+  font-weight: 500;
   margin-bottom: 5px;
+  color: rgb(148, 145, 145);
 }
 .radio {
   margin: 0.5rem 0.5rem 0.5rem 0;
@@ -806,4 +827,22 @@ input[type='number']::-webkit-inner-spin-button {
 }
 .button_calc:hover {
   background-color: darken(#febd01, 10%);
+}
+.forms-calldecor {
+  position: relative;
+}
+.forms-calldecor .success {
+  bottom: 10px;
+  right: 50px;
+  position: absolute;
+  width: 320px;
+  padding: 10px 20px;
+  background-color: #febd01;
+  opacity: 0;
+  z-index: -1;
+  @include transition(all, 0.3s, ease);
+}
+.forms-calldecor.active .success {
+  opacity: 1;
+  z-index: 1;
 }

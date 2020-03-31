@@ -1,9 +1,18 @@
 .header_fon {
-  background: url(../img/hero/1.jpg) center center no-repeat;
+  background: #000 url(../img/hero/1.jpg) center center no-repeat;
   background-size: cover;
   min-height: 100vh;
+  background-attachment: fixed;
 }
-
+.header_allpage {
+  padding: 0;
+  margin: 0;
+  background-color: #000;
+}
+.header_allpage .topline {
+  background-color: #000;
+  position: static;
+}
 .topline {
   position: fixed;
   position: absolute;
@@ -17,6 +26,7 @@
 }
 .topline.fixed {
   position: fixed;
+  z-index: 1;
   background-color: #fff;
   animation: fixHeader 1s ease;
 }
