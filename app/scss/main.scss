@@ -10,10 +10,12 @@
   color: $placeholdercolortext;
   opacity: 1;
 }
+
 *::-ms-input-placeholder {
   color: $placeholdercolortext;
   opacity: 1;
 }
+
 ::placeholder {
   color: $placeholdercolortext;
 }
@@ -46,13 +48,16 @@ body {
   font-family: $default-font;
   overflow-x: hidden;
   color: $body_color_text;
+
   input,
   textarea {
     border: #666 1px solid;
     outline: none;
+
     &:focus:required:invalid {
       border-color: red;
     }
+
     &:required:valid {
       border-color: green;
     }
@@ -63,6 +68,7 @@ body {
   display: block;
   max-width: 100%;
   height: auto;
+
   &.img-width {
     width: 100%;
   }
@@ -71,5 +77,6 @@ body {
 @import 'header'; // стили шапки сайта
 @import 'allstyle'; // стили шапки сайта
 @import 'allpage'; // стили шапки сайта
+@import 'calculate'; // стили шапки сайта
 @import 'footer'; // стили шапки сайта
 @import 'media'; // Always at the end
