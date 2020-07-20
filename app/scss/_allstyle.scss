@@ -49,6 +49,7 @@
 .about_me_wrap {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .about_me_wrap .pic {
@@ -544,12 +545,13 @@
 .blog_content {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .blok_post {
-  flex: 0 0 calc(33.33% - 30px);
-  max-width: calc(33.33% - 30px);
-  margin-right: 15px;
+  flex: 0 0 32%;
+  max-width: 32%;
+  margin-right: 2%;
 }
 
 .blok_post:last-child {

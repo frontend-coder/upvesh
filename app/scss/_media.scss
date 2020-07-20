@@ -1,19 +1,16 @@
 /*==========  Desktop First  ==========*/
-@media only screen and (max-width: 1440px) {
-}
+@media only screen and (max-width: 1440px) {}
 
-@media only screen and (max-width: 1280px) {
-}
+@media only screen and (max-width: 1280px) {}
 
-@media only screen and (max-width: 1200px) {
-}
+@media only screen and (max-width: 1200px) {}
 
-@media only screen and (max-width: 1190px) {
-}
+@media only screen and (max-width: 1190px) {}
 
 @media screen and (max-width: 1080px) {
   /* делать это разрешение */
 }
+
 /* первое разрешение под казачика */
 @media only screen and (max-width: 1024px) {
   /* делать это разрешение */
@@ -23,42 +20,45 @@
   //основное разрешение 992 -1
 }
 
-@media only screen and (max-width: 834px) {
-}
+@media only screen and (max-width: 834px) {}
 
-@media only screen and (max-width: 812px) {
-}
+@media only screen and (max-width: 812px) {}
 
-@media only screen and (max-width: 800px) {
-}
+@media only screen and (max-width: 800px) {}
 
 @media only screen and (max-width: 767px) {
+
   //основное разрешение 768 -1
   header {
     padding: 15px;
-    position: fixed;
     border: none;
     background-color: #000;
   }
+
   .navbar {
     position: absolute;
     background-color: #000000;
     width: 100%;
     left: 0;
-    top: 60px;
+    top: 52px;
     padding: 15px;
     display: none;
+    overflow-y: auto;
   }
+
   .navbar.show {
     display: block;
   }
+
   header .navbar ul li {
     display: block;
     margin-left: 0;
   }
+
   .ham-burger .fa {
     display: inline-block;
   }
+
   header .navbar ul li a {
     line-height: 42px;
   }
@@ -66,74 +66,212 @@
 
 /* end  (max-width: 768px) */
 @media only screen and (max-width: 740px) {
+  .topline {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .topline.fixed .navbar ul li a {
+    color: #fff
+  }
+
+
+
+
 }
 
 @media only screen and (max-width: 736px) {
+
+  .our_service_item {
+    flex: 0 0 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+
+  .skills_wrap {
+    flex-wrap: wrap;
+  }
+
+  .skills_wrap_items {
+    width: 100%;
+  }
+
+  .skills_wrap_items:nth-child(even) {
+    order: 0;
+    margin-bottom: 25px;
+  }
+
+  .skills_wrap_items:nth-child(odd) {
+
+    order: 1;
+  }
+
+  .portfolio .portfolio_gallery .item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .acc_wrap,
+  .price-form {
+    flex-wrap: wrap;
+  }
+
+  .price-form_item {
+    margin: 0 auto 25px;
+    width: 90%;
+  }
+
+  .acc_wrap-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .blok_post {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+
+  .blok_post .info {
+    margin-top: 10px;
+  }
+
+  .our_service_item {
+    flex: 0 0 90%;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }
 
-@media only screen and (max-width: 734px) {
-}
+@media only screen and (max-width: 734px) {}
 
-@media only screen and (max-width: 684px) {
-}
+@media only screen and (max-width: 684px) {}
 
-@media only screen and (max-width: 667px) {
-}
+@media only screen and (max-width: 667px) {}
 
-@media only screen and (max-width: 640px) {
-}
+@media only screen and (max-width: 640px) {}
 
 @media only screen and (max-width: 600px) {
+
   /* делать это разрешение */
+  .portfolio .portfolio_gallery .item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .siteform_item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .siteform_item:nth-child(even) {
+    margin-top: 30px;
+  }
+
+
 }
 
 @media only screen and (max-width: 568px) {
+  .block h2 {
+    font-size: 30px;
+  }
+
+  .block,
+  .single-block {
+    padding: 50px 0;
+  }
+
 }
+
 @media only screen and (max-width: 500px) {
   //основное разрешение 500
 }
+
 @media only screen and (max-width: 480px) {
+
   /* делать это разрешение */
+  .header_content h1 {
+    font-size: 60px;
+  }
+
+  .about_me_wrap .about_content,
+  .about_me_wrap .pic {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .about_me_wrap .pic {
+    margin-bottom: 25px;
+  }
+
+  .contact_info li {
+    width: 100%;
+  }
+
+  .testimonials-content .testi-slider .slide {
+    flex-wrap: wrap;
+  }
+
+  .testimonials-content .testi-slider .slide .cont_text {
+    margin-top: 20px;
+    width: 100%;
+
+  }
+
+
 }
 
-@media only screen and (max-width: 425px) {
-}
+@media only screen and (max-width: 425px) {}
 
-@media only screen and (max-width: 414px) {
-}
+@media only screen and (max-width: 414px) {}
 
-@media only screen and (max-width: 412px) {
-}
+@media only screen and (max-width: 412px) {}
 
 @media only screen and (max-width: 384px) {
+  .header_content h1 {
+    font-size: 50px;
+  }
+
 }
 
-@media only screen and (max-width: 375px) {
-}
+@media only screen and (max-width: 375px) {}
 
 @media only screen and (max-width: 360px) {
+  .block h2 {
+    font-size: 26px;
+  }
+
+
 }
 
 @media only screen and (max-width: 320px) {
+  .header_content h1 {
+    font-size: 46px;
+  }
+
+  .block h2 {
+    font-size: 24px;
+  }
 }
 
 /*==========  Mobile First  ==========*/
 
 /*
 // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-}
+@media (min-width: 576px) {}
+
 /*
 // Medium devices (tablets, 768px and up)
  */
-@media (min-width: 768px) {
-}
+@media (min-width: 768px) {}
+
 /*
 // Large devices (desktops, 992px and up)
  */
-@media (min-width: 992px) {
-}
+@media (min-width: 992px) {}
+
 /*
 // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-}
+@media (min-width: 1200px) {}

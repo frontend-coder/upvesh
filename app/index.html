@@ -48,7 +48,7 @@
             </div>
             <div class="navbar">
               <ul>
-                <li class="active"><a href="#header">Главная</a></li>
+                <li><a href="#header">Главная</a></li>
                 <li><a href="#about">О нас</a></li>
                 <li><a href="#service">Услуги</a></li>
                 <li><a href="#portfolio">Портфолио</a></li>
@@ -94,7 +94,7 @@
                   </div>
                   <ul class="contact_info">
                     <li>
-                      <span>E-mail: </span><a href="mailtofrontendercode@gmail.com">frontendercode@gmail.com</a>
+                      <span>E-mail: </span><a href="mailto:frontendercode@gmail.com">frontendercode@gmail.com</a>
                     </li>
                     <li>
                       <span>Skype: </span><a href="skype:webrabcom?add">webrabcom</a>
@@ -849,7 +849,7 @@
             <div class="blog_content">
               <div class="blok_post">
                 <div class="picture">
-                  <img src="/img/blog/1.jpg" alt="пост для блога" />
+                  <img src="img/blog/1.jpg" alt="пост для блога" />
                 </div>
                 <div class="info">
                   <span>2 марта 2020</span>
@@ -865,7 +865,7 @@
 
               <div class="blok_post">
                 <div class="picture">
-                  <img src="/img/blog/2.jpg" alt="пост для блога" />
+                  <img src="img/blog/2.jpg" alt="пост для блога" />
                 </div>
                 <div class="info">
                   <span>2 марта 2020</span>
@@ -881,7 +881,7 @@
 
               <div class="blok_post">
                 <div class="picture">
-                  <img src="/img/blog/3.jpg" alt="пост для блога" />
+                  <img src="img/blog/3.jpg" alt="пост для блога" />
                 </div>
                 <div class="info">
                   <span>2 марта 2020</span>
@@ -982,13 +982,13 @@
   <script>
     window.onscroll = function () {
       const docScrollTop = document.documentElement.scrollTop;
-      if (window.innerWidth > 991) {
-        if (docScrollTop > 100) {
-          document.querySelector(".topline").classList.add("fixed");
-        } else {
-          document.querySelector(".topline").classList.remove("fixed");
-        }
+      // if (window.innerWidth > 991) {
+      if (docScrollTop > 100) {
+        document.querySelector(".topline").classList.add("fixed");
+      } else {
+        document.querySelector(".topline").classList.remove("fixed");
       }
+      // }
     }
   </script>
 
@@ -1045,24 +1045,23 @@
   </script>
 
   <script>
-
     const formCalcul = $('#price-form');
     let formData = formCalcul.serializeJSON();
     showHideBlocks();
     // цена разработки типовой секции
-    const typicalSectionPrice = 2000;
-    const uniquePagePrice = 5000;
-    const generalPagePrice = 2500;
+    const typicalSectionPrice = 400;
+    const uniquePagePrice = 2400;
+    const generalPagePrice = 1700;
 
-    const oneCarouselPrice = 1500;
-    const oneModalsPrice = 900;
-    const oneCalculatePrice = 8500;
-    const onePortfolioPrice = 1800;
+    const oneCarouselPrice = 600;
+    const oneModalsPrice = 400;
+    const oneCalculatePrice = 5000;
+    const onePortfolioPrice = 700;
 
     const wordpressUniquePrice = 1500;
     const wordpressGeneralPrice = 1000;
     const wordpressSectionPrice = 300;
-    const wordpressCalculatePrice = 4000;
+    const wordpressCalculatePrice = 2000;
     const wordpressPortfolioPrice = 500;
 
     let uniquePagePriceOut = uniquePagePrice
@@ -1172,6 +1171,7 @@
 
       $('#cost_final span').text(totalPrice);
     });
+
     function showHideBlocks() {
       if (formData.mobile == 'on') {
         $('[data-name="mobile"]').show(1000);
@@ -1233,7 +1233,6 @@
         $('[name="pages-general-blog"]').val('0');
       }
     }
-
   </script>
 
 
