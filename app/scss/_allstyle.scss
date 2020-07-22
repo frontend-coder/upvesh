@@ -59,7 +59,6 @@
   background-image: url(../img/about_me.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  //  background-size: 50% 40%;
   background-position: 20% 0;
   transform: rotateY(180deg);
 }
@@ -323,7 +322,6 @@
 }
 
 .portfolio .portfolio_gallery .item .overlay h4 {
-  // background-color: #febd01;
   color: #fff;
   font-size: 19px;
   font-weight: 600;
@@ -448,7 +446,6 @@
 
 .testimonials-content .testi-slider .slide .cont_text {
   padding-left: 15px;
-  //background-color: red;
 }
 
 .testimonials-content .testi-slider .slide p {
@@ -520,7 +517,7 @@
 }
 
 .title {
-  font: 20px;
+  font-size: 26px;
   font-weight: 600;
 }
 
@@ -844,7 +841,6 @@
 .mobile_sec label {
   font-size: 20px;
   font-weight: 500;
-  /// margin-bottom: 10px;
 }
 
 .hidden {
