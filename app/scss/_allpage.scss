@@ -2,32 +2,41 @@
   margin-top: 40px;
   padding: 12px 15px;
 }
+
 .crumbs {
   padding: 1em;
 }
+
 .crumbs li {
   display: inline-block;
 }
+
 .crumbs li:after {
   content: '→';
   padding: 0 0.25em 0 0.5em;
   color: #999;
 }
+
 .crumbs li.last:before,
 .crumbs li.last:after {
   content: '';
 }
+
 .crumbs li a {
   color: #000;
   text-decoration: none;
   @include transition(all, 0.2s, ease);
 }
+
 .crumbs li a:hover {
   text-decoration: underline;
 }
+
+.allpage .single-block,
 .allpage .block {
   padding: 40px 0;
 }
+
 // оформление страницы категории
 .category_wrap {
   padding: 0;
@@ -49,16 +58,31 @@
   padding: 0;
   margin: 0;
 }
+
 .post_box .single_item,
 .post_box .post_item {
   margin-bottom: 30px;
 }
+
+.post_box .single_item a,
+.post_box .post_item a {
+  color: #000;
+  text-decoration: none;
+  @include transition(all, 0.2s, ease);
+}
+
+.post_box .single_item a:hover,
+.post_box .post_item a:hover {
+  text-decoration: underline;
+}
+
 
 .post_box .post_item .post-thumb {
   padding: 0;
   float: left;
   width: 40%;
 }
+
 .post_box .single_item img,
 .post_box .single_item .single-thumb img,
 .post_box .post_item .single-thumb a img,
@@ -72,17 +96,21 @@
   margin: 0;
   padding: 0;
 }
+
 .post_box .single_item h2 {
   margin: 20px 0;
 }
+
 .post_box .single_item ul,
 .post_box .single_item ol {
   padding-left: 30px;
   margin: 20px 0;
 }
+
 .post_box .single_item ul {
   list-style-type: none;
 }
+
 .post_box .single_item ul li {
   position: relative;
 }
@@ -99,12 +127,15 @@
   padding: 20px 10px 20px 30px;
   border-left: 1px solid red;
 }
+
 .post_box .single_item p {
   margin-bottom: 10px;
 }
+
 .post_box .single_item img {
   margin: 20px 0;
 }
+
 .post_box .post_item .post_text {
   float: left;
   width: 60%;
@@ -114,6 +145,7 @@
 .post_box .post_item .single_text {
   margin-top: 20px;
 }
+
 .post_box .post_item .single_text .date_publish {
   text-align: right;
 }
@@ -137,10 +169,12 @@
   bottom: -10px;
   background-color: #febd01;
 }
+
 .post_box .post_item .single_text h2 {
   text-transform: uppercase;
   line-height: 1.8;
 }
+
 .post_box .single_item h6,
 .post_box .single_item h5,
 .post_box .single_item h4,
@@ -154,18 +188,23 @@
   color: #000;
   margin: 20px 0 20px 0;
 }
+
 .post_box .single_item h6 {
   font-size: 23px;
 }
+
 .post_box .single_item h5 {
   font-size: 25px;
 }
+
 .post_box .single_item h4 {
   font-size: 27px;
 }
+
 .post_box .single_item h3 {
   font-size: 30px;
 }
+
 .post_box .post_item .single_text p,
 .post_box .post_item .post_text p {
   margin-bottom: 20px;
@@ -220,6 +259,7 @@
 .post_text_link {
   text-align: right;
 }
+
 .post_text .post_text_link .read_more {
   text-transform: uppercase;
   font-weight: 700;
@@ -242,6 +282,7 @@
   bottom: -10px;
   background-color: #febd01;
 }
+
 .post_text .post_text_link .read_more:hover:before {
   width: 100%;
 }
@@ -287,6 +328,7 @@
   background-color: #ffcb0f;
   color: #fff;
 }
+
 // оформление сайдбара
 
 .category_sidebar .widget {
@@ -309,13 +351,16 @@
   padding-left: 30px;
   list-style-type: none;
 }
+
 .category_sidebar .widget ul li {
   position: relative;
   margin-bottom: 5px;
 }
+
 .category_sidebar .widget ul li ul {
   padding-left: 17px;
 }
+
 .category_sidebar .widget ul li:before {
   left: -15px;
   content: '\f103';
@@ -329,9 +374,11 @@
   text-decoration: none;
   @include transition(all, 0.2s, ease);
 }
+
 .category_sidebar .widget ul li a:hover {
   text-decoration: underline;
 }
+
 .category_sidebar .widget .searchform {
   padding: 0;
   margin: 0;
@@ -345,6 +392,7 @@
   border-right: none;
   text-indent: 5px;
 }
+
 .category_sidebar .widget .searchform .submit {
   width: 40%;
   height: 40px;
@@ -390,6 +438,7 @@
 .error_fs .submit-search:hover {
   //  background-color: darken($top_line_color, 10%);
 }
+
 .search_rezzult {
   margin-top: 30px;
   font-size: 1.3rem;

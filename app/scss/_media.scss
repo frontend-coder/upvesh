@@ -16,11 +16,41 @@
   /* делать это разрешение */
 }
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   //основное разрешение 992 -1
+
+  .post_box .post_item .single_text h2,
+  .post_box .post_item .post_text h2 {
+    font-size: 1.4000rem;
+  }
+
+  .post_box .single_item h6,
+  .post_box .single_item h5,
+  .post_box .single_item h4,
+  .post_box .single_item h3,
+  .post_box .single_item h2,
+  .post_box .single_item h1 {
+    font-size: 30px;
+  }
+
 }
 
-@media only screen and (max-width: 834px) {}
+@media only screen and (max-width: 834px) {
+
+  .category_content {
+    width: 100%;
+    float: none;
+    padding-right: 0;
+  }
+
+  .category_sidebar {
+    width: 60%;
+    float: none;
+    margin: 25px auto;
+  }
+
+
+}
 
 @media only screen and (max-width: 812px) {}
 
@@ -36,6 +66,7 @@
   }
 
   .navbar {
+    z-index: 100;
     position: absolute;
     background-color: #000000;
     width: 100%;
@@ -171,6 +202,39 @@
   }
 
 
+
+  .post_box .post_item .post-thumb {
+    padding: 0;
+    float: none;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .post_box .post_item .post_text {
+    float: none;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .category_sidebar {
+    width: 100%;
+  }
+
+  .post_box .single_item h1,
+  .post_box .single_item h2 {
+    font-size: 1.4rem;
+  }
+
+  .post_box .single_item h6,
+  .post_box .single_item h5,
+  .post_box .single_item h4,
+  .post_box .single_item h3 {
+    font-size: 1.30rem;
+  }
+
+
+
+
 }
 
 @media only screen and (max-width: 568px) {
@@ -234,6 +298,26 @@
     font-size: 50px;
   }
 
+  .post_box .post_item .single_text h2,
+  .post_box .post_item .post_text h2 {
+    font-size: 1.3000rem;
+  }
+
+  .allpage .single-block,
+  .allpage .block {
+    padding: 20px 0;
+  }
+
+  .breadcrumbs_wrap {
+    margin-top: 15px;
+  }
+
+  .pagination ul li {
+    margin-bottom: 10px;
+  }
+
+
+
 }
 
 @media only screen and (max-width: 375px) {}
@@ -243,6 +327,10 @@
     font-size: 26px;
   }
 
+  .post_box .single_item h1,
+  .post_box .single_item h2 {
+    font-size: 1.3rem;
+  }
 
 }
 
