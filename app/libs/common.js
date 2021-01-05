@@ -1,5 +1,4 @@
-'use strict';
-$(document).ready(function() {
+$(document).ready(() => {
   $('.testi-slider').slick({
     infinite: true,
     dots: true,
@@ -10,68 +9,29 @@ $(document).ready(function() {
     prevArrow: "<button type='button' class='slick-prev pull-left'></button>",
     nextArrow: "<button type='button' class='slick-next pull-right'></button>",
 
-
     responsive: [{
       breakpoint: 1920,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2,
-      }
-     }, {
+      },
+    }, {
       breakpoint: 690,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        }
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
     }, {
 
-        breakpoint: 300,
-        settings: {
-          settings: "unslick" // destroys slick
-        }
+      breakpoint: 300,
+      settings: {
+        settings: "unslick", // destroys slick
+      },
     }],
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   });
 
-  $('.item-header').click(function() {
+  $('.item-header').click(function () {
     $('.accordion-item').removeClass('active');
     $(this)
       .parent()
@@ -85,16 +45,16 @@ $(document).ready(function() {
       .css('line-height', '21px');
   });
 
-  $('form').submit(function() {
-    //Change
-    var th = $(this);
+  $('form').submit(function () {
+    // Change
+    const th = $(this);
     $.ajax({
       type: 'POST',
-      url: 'mail.php', //Change
+      url: 'mail.php', // Change
       data: th.serialize(),
-    }).done(function() {
+    }).done(() => {
       $('.forms-calldecor').addClass('active');
-      setTimeout(function() {
+      setTimeout(() => {
         // Done Functions
         $('.forms-calldecor').removeClass('active');
         th.trigger('reset');
