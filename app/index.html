@@ -328,7 +328,7 @@
                 <div class="inner">
                   <img src="img/portfolio/lp-1.jpg" alt="Эта работа в портфолио" />
                   <div class="overlay">
-                    <span class="fa fa-plus"></span>
+                    <a href="#" class=" overlay-link fa fa-plus"></a>
                     <h4>Школа бизнеса</h4>
                   </div>
                 </div>
@@ -338,7 +338,7 @@
                 <div class="inner">
                   <img src="img/portfolio/blog-1.jpg" alt="Эта работа в портфолио" />
                   <div class="overlay">
-                    <span class="fa fa-plus"></span>
+                    <a href="#" class=" overlay-link fa fa-plus"></a>
                     <h4>Решения для бизнеса</h4>
                   </div>
                 </div>
@@ -348,7 +348,7 @@
                 <div class="inner">
                   <img src="img/portfolio/sv-1.jpg" alt="Эта работа в портфолио" />
                   <div class="overlay">
-                    <span class="fa fa-plus"></span>
+                     <a href="#" class=" overlay-link fa fa-plus"></a>
                     <h4>Веб-дизайн проффи</h4>
                   </div>
                 </div>
@@ -358,7 +358,7 @@
                 <div class="inner">
                   <img src="img/portfolio/lp-2.jpg" alt="Эта работа в портфолио" />
                   <div class="overlay">
-                    <span class="fa fa-plus"></span>
+                    <a href="#" class=" overlay-link fa fa-plus"></a>
                     <h4>Сиплимент</h4>
                   </div>
                 </div>
@@ -368,7 +368,7 @@
                 <div class="inner">
                   <img src="img/portfolio/blog-2.jpg" alt="Эта работа в портфолио" />
                   <div class="overlay">
-                    <span class="fa fa-plus"></span>
+                    <a href="#" class=" overlay-link fa fa-plus"></a>
                     <h4>Констракшин-инженеры</h4>
                   </div>
                 </div>
@@ -378,14 +378,24 @@
                 <div class="inner">
                   <img src="img/portfolio/sv-2.jpg" alt="Эта работа в портфолио" />
                   <div class="overlay">
-                    <span class="fa fa-plus"></span>
+                     <a href="#" class=" overlay-link fa fa-plus"></a>
                     <h4>Сайт-визитка</h4>
                   </div>
                 </div>
               </div>
             </div>
+        
           </div>
-        </div>
+          <div class="row">
+
+<div class="button__cwnter">
+                       <a href="#" class="button_calc">Все проекты</a>
+
+</div>
+          
+  
+</div>
+                        </div>
       </section>
 
       <div class="lightbox">
@@ -506,9 +516,6 @@
                   </div>
                 </div>
 
-
-
-
                 <div class="price-form_item">
                   <div class="mobile_sec mobile_ad">
 
@@ -537,9 +544,7 @@
                     </div>
                   </div>
 
-                  <h5 class="title_calcul">Дополнительный фуцнкционал</h5>
-
-
+                  <h5 class="title_calcul">Дополнительный функционал </h5>
 
                   <div class="col_page_wrap">
                     <div class="col_page_item">
@@ -549,7 +554,6 @@
                       <h5 class="title_minicalcul">Карусель c контентом</h5>
                     </div>
                   </div>
-
 
                   <div class="col_page_wrap">
                     <div class="col_page_item">
@@ -628,13 +632,6 @@
                   <button class="button_calc">Отправить</button>
 
                 </div>
-
-
-
-
-
-
-
 
               </form>
             </div>
@@ -1048,16 +1045,16 @@
       lightbox.classList.remove('show');
     });
 
-    const gallery = document.querySelector('.portfolio_gallery');
-    const galleryItem = document.querySelectorAll('.item');
+    // const gallery = document.querySelector('.portfolio_gallery');
+    // const galleryItem = document.querySelectorAll('.item');
 
-    galleryItem.forEach(function (e) {
-      e.querySelector('.fa-plus').addEventListener('click', function () {
-        lightbox.classList.remove('hide');
-        lightbox.classList.add('show');
-        lightBoxImages.src = e.querySelector('img').getAttribute('src');
-      });
-    });
+    // galleryItem.forEach(function (e) {
+    //   e.querySelector('.fa-plus').addEventListener('click', function () {
+    //     lightbox.classList.remove('hide');
+    //     lightbox.classList.add('show');
+    //     lightBoxImages.src = e.querySelector('img').getAttribute('src');
+    //   });
+    // });
   </script> 
 
   <script>

@@ -107,9 +107,15 @@
     max-width: 100%;
   }
 
+  // .our_service_item {
+  //   flex: 0 0 calc(50% - 20px);
+  //   max-width: calc(50% - 20px);
+  // }
   .our_service_item {
-    flex: 0 0 calc(50% - 20px);
-    max-width: calc(50% - 20px);
+    flex: 0 0 90%;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 90%;
   }
 
   .skills_wrap {
@@ -160,11 +166,8 @@
     margin-top: 10px;
   }
 
-  .our_service_item {
-    flex: 0 0 90%;
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 90%;
+  .picture img {
+    width: 100%;
   }
 }
 
@@ -220,6 +223,11 @@
   .post_box .single_item h3 {
     font-size: 1.3rem;
   }
+
+  .contact_info li {
+    display: block;
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 568px) {
@@ -265,17 +273,53 @@
     margin-top: 20px;
     width: 100%;
   }
+
+  .about_me_wrap .about_content {
+    padding-left: 0;
+  }
 }
 
-@media only screen and (max-width: 425px) {}
+@media only screen and (max-width: 425px) {
+  .skill_bar_in span {
+    top: -34px;
+  }
+
+  .header_content h1 {
+    font-size: 48px;
+  }
+
+  .block h2 {
+    font-size: 26px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .site_form_field {
+    flex: 0 0 100%;
+    margin-bottom: 30px;
+    max-width: 100%;
+  }
+
+  .siteform_area {
+    margin-top: 0;
+  }
+
+  .our_service_title p.small,
+  .skills_wrap p.small,
+  .about_me p.small {
+    font-size: 12px;
+  }
+}
 
 @media only screen and (max-width: 414px) {}
 
 @media only screen and (max-width: 412px) {}
 
 @media only screen and (max-width: 384px) {
-  .header_content h1 {
-    font-size: 50px;
+  .header_content h3 {
+    font-size: 22px;
   }
 
   .post_box .post_item .single_text h2,
@@ -295,9 +339,25 @@
   .pagination ul li {
     margin-bottom: 10px;
   }
+
+  .header_content h1 {
+    font-size: 42px;
+  }
 }
 
-@media only screen and (max-width: 375px) {}
+@media only screen and (max-width: 375px) {
+  .block h2 {
+    font-size: 23px;
+  }
+
+  .button_calc {
+    font-size: 1.2rem;
+  }
+
+  .site_form {
+    padding: 30px 20px;
+  }
+}
 
 @media only screen and (max-width: 360px) {
   .block h2 {
@@ -311,31 +371,19 @@
 }
 
 @media only screen and (max-width: 320px) {
-  .header_content h1 {
-    font-size: 46px;
+  .header_content {
+    padding-left: 12px;
+  }
+
+  header {
+    padding: 0 5px;
   }
 
   .block h2 {
     font-size: 24px;
   }
+
+  .header_content h1 {
+    font-size: 40px;
+  }
 }
-
-/* ==========  Mobile First  ========== */
-
-/*
-// Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {}
-
-/*
-// Medium devices (tablets, 768px and up)
- */
-@media (min-width: 768px) {}
-
-/*
-// Large devices (desktops, 992px and up)
- */
-@media (min-width: 992px) {}
-
-/*
-// Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}

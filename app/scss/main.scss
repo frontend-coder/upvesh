@@ -1,17 +1,17 @@
-@import 'var';
+@import "var";
 
 // эти свойства по default
-*::-webkit-input-placeholder {
+*::input-placeholder {
   color: #202020;
   opacity: 1;
 }
 
-*::-moz-placeholder {
+*::placeholder {
   color: $placeholdercolortext;
   opacity: 1;
 }
 
-*::-ms-input-placeholder {
+*::input-placeholder {
   color: $placeholdercolortext;
   opacity: 1;
 }
@@ -21,62 +21,65 @@
 }
 
 ::selection {
-  background-color: $accent_color;
   color: $white_color;
+  background-color: $accent_color;
 }
 
-@import 'fonts';
+@import "fonts";
 
 html {
+  overflow-x: auto;
+  margin: 0;
+  padding: 0;
   width: 100%;
+
   /* height: 100%; */
   font-size: $body_fontsize;
   line-height: $body_lineheight;
-  margin: 0;
-  padding: 0;
-  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   scroll-behavior: smooth;
+
   /* overflow-x: hidden; */
 }
 
 body {
-  font-size: $body_fontsize;
-  min-width: 320px;
-  opacity: 1;
   position: relative;
-  line-height: $body_lineheight;
-  font-family: $default-font;
   overflow-x: hidden;
+  min-width: 320px;
+  font-family: $default-font;
+  font-size: $body_fontsize;
+  line-height: $body_lineheight;
   color: $body_color_text;
+  opacity: 1;
 
   input,
   textarea {
-    border: #666 1px solid;
     outline: none;
-
-    &:focus:required:invalid {
-      border-color: red;
-    }
+    border: #666666 1px solid;
 
     &:required:valid {
       border-color: green;
+    }
+
+    &:focus:required:invalid {
+      border-color: red;
     }
   }
 }
 
 .img-responsive {
   display: block;
-  max-width: 100%;
   height: auto;
+  max-width: 100%;
 
   &.img-width {
     width: 100%;
   }
 }
 
-@import 'header'; // стили шапки сайта
-@import 'allstyle'; // стили шапки сайта
-@import 'allpage'; // стили шапки сайта
-@import 'calculate'; // стили шапки сайта
-@import 'footer'; // стили шапки сайта
-@import 'media'; // Always at the end
+@import "header"; // стили шапки сайта
+@import "allstyle"; // стили шапки сайта
+@import "allpage"; // стили шапки сайта
+@import "calculate"; // стили шапки сайта
+@import "footer"; // стили шапки сайта
+@import "media"; // Always at the end

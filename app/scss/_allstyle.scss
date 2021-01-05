@@ -324,6 +324,10 @@
   opacity: 1;
 }
 
+.portfolio .portfolio_gallery .item .overlay .overlay-link {
+  text-decoration: none;
+}
+
 .portfolio .portfolio_gallery .item .overlay h4 {
   margin-top: 5px;
   padding: 5px 7px;
@@ -389,6 +393,17 @@
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.6);
+}
+
+.button__cwnter {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.button__cwnter .button_calc {
+  text-decoration: none;
+  color: #000000;
 }
 
 .lightbox.show {
