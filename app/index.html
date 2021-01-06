@@ -389,7 +389,7 @@
           <div class="row">
 
 <div class="button__cwnter">
-                       <a href="#" class="button_calc">Все проекты</a>
+                       <a href="./category.html" class="button_calc">Все проекты</a>
 
 </div>
           
@@ -609,7 +609,6 @@
                     </div>
                     <h5 class="title_calcul">Посадка верстки</h5>
 
-
                     <div id="posadka" class="radio-group">
                       <div class="radio">
                         <input id="radio-8" name="cms" value="onlylayout" type="radio" checked>
@@ -629,6 +628,26 @@
                     <h5 class="title_calcul final_cost">Финальная стоимость проекта</h5>
                     <div id="cost_final"> <span>2 000</span> рублей</div>
                   </div>
+                              
+              <div class="calcul_form_wrap">
+                <div class="site_form_field">
+                  <input type="text" class="siteform_item" name="name" placeholder="Ваше имя" />
+                </div>
+                <div class="site_form_field">
+                  <input id="phone_key" type="tel" class="siteform_item" name="tel" placeholder="Телефон" />
+                </div>
+
+                <div class="checkbox_box">
+                  <div class="checkbox custom">
+                    <input data-validate-field="checkbox" id="agree_form" class="css-checkbox" type="checkbox"
+                      checked>
+                    <label for="agree_form" class="css-label">Я даю согласие на обработку своих персональных
+                      данных и ознакомлен с <a href="#">политикой конфиденциальности</a>
+                    </label>
+                  </div>
+                </div>
+              </div>
+                  
                   <button class="button_calc">Отправить</button>
 
                 </div>
@@ -857,7 +876,7 @@
                 <p> Уже 5 лет стоимость создания сайтов-визиток стремится к плинтусу. Некоторые фирмы и дорогие
                   фрилансеры переквалифицировались. Но ведь не все способны поменяться.
                 </p>
-                <a href="#">читать заметку</a>
+                <a href="./single.html">читать заметку</a>
               </div>
 
               <div class="blok_post">
@@ -872,7 +891,7 @@
                 <p> Наша команда включает 30 специалистов с разной специализацией. Они решают конкретные задачи. Было
                   сложно. Но когда ушли на удаленку проблем стало намного больше.
                 </p>
-                <a href="#">читать заметку</a>
+                <a href="./single.html">читать заметку</a>
               </div>
 
               <div class="blok_post">
@@ -887,14 +906,12 @@
                 <p> Очень интересно развивается наш рынок! Не успели основить передовые фрейморки и записали сотого
                   клиента на запуск сайта под Node.js, пришлось переоринтировываться на...
                 </p>
-                <a href="#">читать заметку</a>
+                <a href="./single.html">читать заметку</a>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-
 
       <section id="contacts" class="block contact_fon">
         <div class="container">
@@ -912,7 +929,7 @@
                   <input type="text" class="siteform_item" name="name" placeholder="Ваше имя" />
                 </div>
                 <div class="site_form_field">
-                  <input type="tel" class="siteform_item" name="tel" placeholder="Телефон" />
+                  <input id="footer_phone" type="tel" class="siteform_item" name="tel" placeholder="Телефон" />
                 </div>
                 <div class="site_form_text">
                   <textarea class="siteform_area" name="message" placeholder="Ваше сообщение"></textarea>
@@ -939,7 +956,6 @@
     </main>
   </div>
   <!-- /main -->
-
 
   <footer class="footer_box">
     <div class="container">
@@ -1004,7 +1020,6 @@
       // }
     }
   </script>
-
  
   <script>
     const filterBtns = document.querySelector('#filter-btns').children;

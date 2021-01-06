@@ -482,14 +482,14 @@
 }
 
 .slick-dots li {
-  border: 1px solid #ff0000;
+  border: 1px solid #febd01;
   border-radius: 50px;
   width: 10px;
   height: 10px;
 }
 
 .slick-dots li.slick-active {
-  background-color: #ff0000;
+  background-color: #febd01;
 }
 
 .slick-slide {
@@ -649,10 +649,25 @@
   background-color: #ffffff;
 }
 
+.calcul_form_wrap,
 .site_form_wrap {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.calcul_form_wrap .site_form_field {
+  flex: 0 0 100%;
+  margin-bottom: 10px;
+  max-width: 100%;
+}
+
+.calcul_form_wrap .site_form_field .siteform_item {
+  border: 1px solid #febd01;
+}
+
+.calcul_form_wrap {
+  margin-top: 20px;
 }
 
 .site_form_field {

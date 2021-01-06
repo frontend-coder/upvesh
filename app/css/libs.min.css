@@ -1036,8 +1036,8 @@ a.cv_btn:hover{color:#000;background-color:#fff}
 .testimonials-content .testi-slider .slide .cont_text{padding-left:15px}
 .testimonials-content .testi-slider .slide p{margin:0 0 15px;font-weight:400;font-size:15px;line-height:24px;color:#838383}
 .testimonials-content .testi-slider .slide h6{margin:10px 0;font-weight:600;font-size:16px;color:#000}
-.slick-dots li{border:1px solid red;border-radius:50px;width:10px;height:10px}
-.slick-dots li.slick-active{background-color:red}
+.slick-dots li{border:1px solid #febd01;border-radius:50px;width:10px;height:10px}
+.slick-dots li.slick-active{background-color:#febd01}
 .slick-slide{padding:0 15px}
 .acc_wrap{display:flex;justify-content:space-between}
 .acc_wrap-item{flex:0 0 50%;max-width:50%}
@@ -1063,7 +1063,10 @@ a.cv_btn:hover{color:#000;background-color:#fff}
 .blok_post a:hover{border-bottom:1px solid #000;color:#000}
 .contact_fon{background-color:#f5f8fd}
 .site_form{padding:30px 40px;background-color:#fff}
-.site_form_wrap{display:flex;flex-wrap:wrap;justify-content:space-between}
+.calcul_form_wrap,.site_form_wrap{display:flex;flex-wrap:wrap;justify-content:space-between}
+.calcul_form_wrap .site_form_field{flex:0 0 100%;margin-bottom:10px;max-width:100%}
+.calcul_form_wrap .site_form_field .siteform_item{border:1px solid #febd01}
+.calcul_form_wrap{margin-top:20px}
 .site_form_field{flex:0 0 48%;max-width:48%}
 .siteform_item{flex:0 0 100%;border:1px solid #ced4da;width:100%;height:45px;font-weight:400;font-size:14px;line-height:45px;text-indent:14px;color:#838383}
 .site_form_text{flex:0 0 100%;max-width:100%}

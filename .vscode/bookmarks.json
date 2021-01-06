@@ -1,0 +1,22 @@
+[
+	{
+		"path": "$ROOTPATH$\\app\\index.html",
+		"bookmarks": [
+			{
+				"line": 631,
+				"column": 4,
+				"label": ""
+			}
+		]
+	},
+	{
+		"path": "$ROOTPATH$\\app\\scss\\_allstyle.scss",
+		"bookmarks": [
+			{
+				"line": 483,
+				"column": 0,
+				"label": ""
+			}
+		]
+	}
+]

@@ -1,4 +1,15 @@
 $(document).ready(() => {
+  $(() => {
+    $('#phone_key').mask('+7(000)000-00-00', {
+      placeholder: '+7(___)___-__-__',
+      clearIfNotMatch: true,
+    });
+    $('#footer_phone').mask('+7(000)000-00-00', {
+      placeholder: '+7(___)___-__-__',
+      clearIfNotMatch: true,
+    });
+  });
+
   $('.testi-slider').slick({
     infinite: true,
     dots: true,
